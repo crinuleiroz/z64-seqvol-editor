@@ -7,20 +7,22 @@ To use the script, use the following command in your terminal:
 python <script_name.py> [-h] [file] [volume] [-j] [-g GAME]
 ```
 
-### Terminal Arguments
+### 📥 Terminal Arguments
 | Argument | Description |
 | --- | --- |
-| `script_name` | The name of the script on your PC |
-| `-h` | Displays the help message |
-| `file` | The name of the `.ootrs`, `.mmrs`, `.seq`, `.aseq`, or `.zseq` file. |
-| `volume` | The new volume value for the ASEQ Master Volume message. Value must be between 0 and 255 (decimal or hex). |
-| `-j` | Tells the script to change conditional jump messages into non-conditional jump messages. |
-| `-g GAME` | Determines the instruction set the script will use for a sequence file. |
+| `-h` | Displays the help message in the terminal. |
+| `file` | The `.ootrs`, `.mmrs`, `.seq`, `.aseq`, or `.zseq` file to be edited. |
+| `volume` | New master volume value (0 to 255 in decimal or hex). |
+| `-j` | Converts conditional jump messages into non-conditional ones. |
+| `-g GAME` | Specifies the instruction set to use during sequence parsing. |
 
 > [!CAUTION]
-> Script and file names containing spaces must be put into quotations. You can drag and drop both the script and the file you want to edit onto your terminal's window to add their path's as arguments instead of typing them out.
+> If your script or file names contain spaces, they must be enclosed in quotes.
 
-#### Terminal Help Message
+> [!TIP]
+> You can drag and drop files onto the terminal window to automatically insert their paths (enclosed in quotes).
+
+### ❓ Terminal Help Message
 The output of the help message is below:
 ```
 usage: [>_] python Zelda64_Seqvol_Editor.v2025-02-24.py [-h] [file] [volume] [-j] [-g GAME]
